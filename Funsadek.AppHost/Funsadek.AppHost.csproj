@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Sdk Name="Aspire.AppHost.Sdk" Version="9.5.0" />
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>c3ae473c-3b86-4f01-8a95-364345814a5f</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting" Version="9.5.2" />
+    <PackageReference Include="Aspire.Hosting.AppHost" Version="9.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Funsadek.CatalogService\Funsadek.CatalogService.csproj" />
+    <ProjectReference Include="..\Funsadek.NotificationWorker\Funsadek.NotificationWorker.csproj" />
+    <ProjectReference Include="..\Funsadek.OrderService\Funsadek.OrderService.csproj" />
+  </ItemGroup>
+
+</Project>

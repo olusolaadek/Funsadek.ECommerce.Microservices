@@ -1,0 +1,6 @@
+@Funsadek.OrderService_HostAddress = http://localhost:5079
+
+GET {{Funsadek.OrderService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

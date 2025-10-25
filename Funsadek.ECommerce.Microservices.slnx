@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="Funsadek.AppHost/Funsadek.AppHost.csproj" />
+  <Project Path="Funsadek.CatalogService/Funsadek.CatalogService.csproj" />
+  <Project Path="Funsadek.NotificationWorker/Funsadek.NotificationWorker.csproj" />
+  <Project Path="Funsadek.OrderService/Funsadek.OrderService.csproj" />
+</Solution>
