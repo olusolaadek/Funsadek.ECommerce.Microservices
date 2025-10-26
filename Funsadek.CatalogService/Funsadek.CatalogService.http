@@ -1,6 +1,38 @@
 @Funsadek.CatalogService_HostAddress = http://localhost:5146
 
-GET {{Funsadek.CatalogService_HostAddress}}/weatherforecast/
+GET {{Funsadek.CatalogService_HostAddress}}/api/products
 Accept: application/json
+
+###
+
+GET {{Funsadek.CatalogService_HostAddress}}/api/products/1
+Accept: application/json
+
+###
+
+POST {{Funsadek.CatalogService_HostAddress}}/api/products
+Content-Type: application/json
+
+{
+  "name": "Monitor",
+  "description": "4K Monitor",
+  "price": 299.99
+}
+
+###
+
+PUT {{Funsadek.CatalogService_HostAddress}}/api/products/4
+Content-Type: application/json
+
+{
+  "id": 4,
+  "name": "Monitor",
+  "description": "4K Monitor updated",
+  "price": 349.99
+}
+
+###
+
+DELETE {{Funsadek.CatalogService_HostAddress}}/api/products/4
 
 ###

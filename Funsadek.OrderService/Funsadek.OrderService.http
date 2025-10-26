@@ -1,6 +1,37 @@
 @Funsadek.OrderService_HostAddress = http://localhost:5079
 
-GET {{Funsadek.OrderService_HostAddress}}/weatherforecast/
+GET {{Funsadek.OrderService_HostAddress}}/api/orders
 Accept: application/json
+
+###
+
+GET {{Funsadek.OrderService_HostAddress}}/api/orders/1
+Accept: application/json
+
+###
+
+POST {{Funsadek.OrderService_HostAddress}}/api/orders
+Content-Type: application/json
+
+{
+  "productId": 1,
+  "quantity": 5
+}
+
+###
+
+PUT {{Funsadek.OrderService_HostAddress}}/api/orders/4
+Content-Type: application/json
+
+{
+  "id": 4,
+  "productId": 1,
+  "quantity": 10,
+  "orderDate": "2023-10-01T00:00:00Z"
+}
+
+###
+
+DELETE {{Funsadek.OrderService_HostAddress}}/api/orders/4
 
 ###
