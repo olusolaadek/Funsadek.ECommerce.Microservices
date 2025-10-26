@@ -23,4 +23,11 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+// Ensure the database is created and seeded
+using (var scope = app.Services.CreateScope())
+{
+    var context = scope.ServiceProvider.GetRequiredService<CatalogDbContext>();
+    context.Database.EnsureCreated();
+}
+
 app.Run();
